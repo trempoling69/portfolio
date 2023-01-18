@@ -1,0 +1,47 @@
+#cursor{
+    position: fixed;
+    z-index: 10000;
+  }
+
+  .cursor{
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
+    mix-blend-mode: difference;
+    background-color: transparent;
+    border: 2px solid $plusclair;
+    height: 30px;
+    width: 30px;
+    transition: all 300ms ease-out;
+  }
+.cursorfusee{
+    transform: translate3d(10px,0,0);
+    width: 5vw;
+    height: 2vw;
+    background-color: $plusclair;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 300ms ease-out;
+    &:after{
+        content: "Click !";
+        font-size: 2.5rem;
+        color: $sombre;
+        font-weight: bold;
+    }
+}
+
+.cursornav{
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
+    mix-blend-mode: difference;
+    background-color: transparent;
+    border: 2px solid $plusclair;
+    height: 300px;
+    width: 30px;
+    transition: all 300ms ease-out;
+}

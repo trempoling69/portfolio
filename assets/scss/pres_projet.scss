@@ -1,0 +1,105 @@
+.return {
+  width: 100vw;
+  height: 5vh;
+  a {
+    font-size: min(5vw, 2.5rem);
+    text-decoration: none;
+    color: $clair;
+    float: left;
+  }
+}
+header {
+  margin-bottom: 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
+  &:after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 80vw;
+    height: 2px;
+    background-color: $clair;
+    opacity: 0.4;
+  }
+
+  h1 {
+    font-size: min(5vw, 2.5rem);
+  }
+  span {
+    font-size: min(3vw, 2rem);
+    font-style: italic;
+    @include media-max("tablet-up") {
+      margin: 0 1vh;
+    }
+  }
+}
+.presprojets {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  @include media-max("tablet-up") {
+    flex-direction: column-reverse;
+  }
+  .slider {
+    min-width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-max("tablet-up") {
+      flex-direction: column;
+    }
+    .imglist {
+      height: 90vh;
+      width: 50vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include media-max("tablet-up") {
+        width: 100vw;
+        height: auto;
+      }
+      .visible {
+        height: 70%;
+      }
+      .invisible {
+        display: none;
+      }
+    }
+
+    button {
+      font-size: 5rem;
+      background-color: transparent;
+      border: none;
+      color: $plusclair;
+      margin: 0 5vh;
+    }
+    .btndesktop {
+      @include media-max("tablet-up") {
+        display: none;
+      }
+    }
+    .btnmobile {
+      @include media-max("tablet-up") {
+        display: flex;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      .btnmobile {
+        display: none;
+      }
+    }
+  }
+  .description {
+    @include media-max("tablet-up") {
+      margin: 0 1vh;
+    }
+    h2 {
+      font-size: min(5vw, 2.5rem);
+    }
+    p {
+      font-size: min(5vw, 2rem);
+      padding-bottom: 3vh;
+    }
+  }
+}

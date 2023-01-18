@@ -1,0 +1,17 @@
+footer{
+    text-align: center;
+    &:before{
+        content: "";
+        display: block;
+        margin: auto;
+        width: 80vw;
+        height: 2px;
+        background-color: $clair;
+        opacity: 0.4;
+    }
+    p{
+        font-size: 2rem;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+}

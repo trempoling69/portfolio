@@ -1,0 +1,59 @@
+.contact{
+    .container{
+        @include media-max("desktop-up"){
+            min-height: fit-content;
+        }
+    }
+    span{
+        font-size: min(12vw, 10rem);
+        color: $clair;
+    }
+    p{
+        margin-top: 10vh;
+        font-size: min(5vw, 2.5rem);
+        @include media-max("tablet-up"){
+            margin-top: 2vh;
+        }
+    }
+    
+    .contacts{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10vh;
+        @include media-max("desktop-up"){
+            flex-wrap: wrap;
+            margin-top: 5vh;
+        }
+       .square{
+            text-decoration: none;
+            background-color: $plusclair;
+            width: 18vw;
+            //margin-right: 5vw;
+            height: 35vh;
+            border-radius: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            @include media-max("desktop-up"){
+                width: 40%;
+                height: 20vh;
+                margin-bottom: 4vh;
+                img{
+                    width: 30%;
+                }
+            }
+            &:hover{
+                background-color: $clair;
+            }
+            p{
+                text-align: center;
+                margin: 0;
+                font-size:  min(3vw, 2rem);
+                color: $sombre;
+                font-weight: bold;
+            }
+        }
+    }
+}

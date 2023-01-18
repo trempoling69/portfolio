@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+  width: 15px; /* Largeur de la barre de défilement */
+  height: 15px; /* Hauteur de la barre de défilement */
+  background-color: $plusclair; /* Couleur de fond de la barre de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $middle; /* Couleur de fond de la poignée */
+  border-radius: 10px; /* arrondi des coins de la poignée */
+}
+
+::-moz-scrollbar {
+  width: 15px; /* Largeur de la barre de défilement */
+  height: 15px; /* Hauteur de la barre de défilement */
+  background-color: $plusclair; /* Couleur de fond de la barre de défilement */
+}
+
+::-moz-scrollbar-thumb {
+  background-color: $middle; /* Couleur de fond de la poignée */
+  border-radius: 10px; /* arrondi des coins de la poignée */
+}

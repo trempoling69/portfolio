@@ -1,0 +1,70 @@
+.apropos{
+    .container{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 10%;
+        @include media-max("tablet-up"){
+            margin: 0 1vh;
+        }
+    }
+    span{
+        font-size: min(12vw, 10rem);
+        color: $clair;
+       }
+    .text{
+        p{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            a{
+                color: $plusclair;
+                &:hover{
+                    color: $clair;
+                }
+            }
+        }
+        h2{
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .description{
+        display: flex;
+        align-items: center;
+        @include media-max("desktop-up"){
+            flex-direction: column;
+            text-align:justify;
+            align-items: center;
+        }
+        img{
+            width: 20vw;
+            border-radius: 50%;
+            margin-left: 5rem;
+            @include media-max("desktop-up"){
+                margin: 0;
+                width: 40vw;
+            }
+        }
+    }
+    .btncv{
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        a{
+            width: fit-content;
+            padding: 1rem;
+            text-decoration: none;
+            color: $plusclair;
+            font-size: 2.5rem;
+            font-weight: bold;
+            border: 1px solid $plusclair;
+            background-color: $sombre;
+            &:hover{
+                background-color: $plusclair;
+                color: $sombre;
+            }
+        }
+    }
+}

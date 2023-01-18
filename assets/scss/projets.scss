@@ -1,0 +1,82 @@
+.titlePJ {
+  font-size: min(12vw, 10rem);
+  color: $clair;
+  margin-left: 1vw;
+}
+.projets {
+  position: relative;
+  width: 98%;
+  min-height: 100vh;
+  margin-left: 2%;
+  .space-holder {
+    position: relative;
+    width: 100%;
+  }
+  .sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+  }
+  .cards {
+    position: relative;
+    height: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .projetContainer {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    
+    color: $clair;
+    .projetlogo {
+      height: fit-content;
+      min-width: 40%;
+      
+    }
+    .projetdescription {
+      min-width: 60%;
+      h2 {
+        font-size: min(8vw, 3.5rem);
+        // margin-bottom: 3vh;
+      }
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3vh;
+        font-style: italic;
+      }
+      h4 {
+        font-size: 2.5rem;
+        margin-bottom: 2vh;
+      }
+      p {
+        font-size: 2rem;
+        margin-bottom: 2vh;
+      }
+      .linkProjet {
+        text-decoration: none;
+        margin-top: 3vh;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: $plusclair;
+        &:hover {
+          color: $clair;
+        }
+      }
+    }
+  }
+}
+
+
+

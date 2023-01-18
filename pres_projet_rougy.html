@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600;700;900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <title>Romain Mourieras</title>
+</head>
+<body>
+    <div class="return">
+        <a href="./index.html#projets">< Retour</a>
+    </div>
+    <header>
+        <h1>Réalisation d'un quiz et d'un gestionnaire de BDD</h1>
+        <span class="description_projet">
+            Suite à la réalisation de leur site web, l'exploitation Rougy m'a indiqué leur envie de réaliser un projet afin de 
+            conseiller les clients et optimiser cette partie qui leur prend beaucoup de temps. Je me suis donc lancé dans ce projet de 
+            grande envergure. 
+        </span>
+        
+    </header>
+    <section class="presprojets">
+        <div class="slider">
+            <div class="btndesktop">
+                <button class="prev"> < </button>
+            </div>
+            
+            <div class="imglist">
+                <img class="visible" id="imgslider" src="./assets/img/pres/logorougyprespng.png" alt="">
+                <img class="invisible" id="imgslider" src="./assets/img/pres/quiz.png" alt="">
+                <img class="invisible" id="imgslider" src="./assets/img/pres/selecresults.png" alt="">
+                <img class="invisible" id="imgslider" src="./assets/img/pres/listeplantephp.png" alt="">
+                <img class="invisible" id="imgslider" src="./assets/img/pres/ajoutplantePHP.png" alt="">
+                <img class="invisible" id="imgslider" src="./assets/img/pres/listeplantereact.png" alt="">
+                <img class="invisible" id="imgslider" src="./assets/img/pres/ajoutplantereact.png" alt="">
+                <img class="invisible" id="imgslider" src="./assets/img/pres/modifreact.png" alt="">
+                <img class="invisible" id="imgslider" src="./assets/img/pres/loginreact.png" alt="">
+            </div>
+            <div class="btndesktop">
+                <button class="next"> > </button>
+            </div>
+            
+            <div class="btnmobile">
+                <button class="prevmob"> < </button>
+                <button class="nextmob"> > </button>
+            </div>
+        </div>
+        <div class="description">
+            <h2>Base de données</h2>
+            <p>
+                La base de données contient l'ensemble des plantes disponibles à la vente dans leur exploitation. Chaque plante a des 
+                attributs qui permettent de les filtrer comme le type de plante, la hauteur ou les couleurs disponibles. 
+                C'est une base de données SQL. 
+            </p>
+            <h2>Quiz</h2>
+            <p>
+                Le quiz est consitué de différentes questions qu'ils m'ont indiqué. Une fois que l'utilisateur a répondu, il est redirigé
+                vers une page qui lui affiche les plantes de la bdd qui correspondent à ses critères. 
+            </p>
+            <h2>Gestion de la bdd</h2>
+            <p>
+                J'ai également réalisé un panel qui leur permet de consulter toutes les plantes disponibles, 
+                modifier celles-ci ou encore en supprimer. Ils peuvent également en ajouter et exporter la bdd sous forme d'excel. 
+            </p>
+            <h2>Technologies</h2>
+            <p>
+                J'ai tout d'abord réalisé ce projet en PHP et une fois fonctionnel j'ai décidé de le refaire en utilisant le framwork
+                REACT.JS et NODE.JS. Cette décision a été motivé par mon envie de découvrir une autre technologie et d'optimiser le projet.
+                La version en React.JS et Node.JS est plus aboutie, notamment avec l'ajout d'un système d'authentifiacation et un design 
+                plus élegant pour le gestionnaire de bdd. 
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>Romain Mourieras &copy; 2023</p>
+    </footer>
+    <script src="./assets/script/presprojet.js"></script>
+</body>
+</html>

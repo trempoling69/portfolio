@@ -1,0 +1,21 @@
+@import "variable";
+@import "general";
+@import "scrollbar";
+@media screen and (min-width: 1024px) {
+  @import "cursor";
+}
+@media screen and (min-width: 1024px) {
+  @import "nav";
+}
+
+@import "home";
+@import "apropos";
+@media screen and (min-width: 1024px) {
+  @import "projets";
+}
+@media screen and (max-width: 1024px) {
+  @import "projets_small";
+}
+@import 'pres_projet';
+@import "contact";
+@import "footer";

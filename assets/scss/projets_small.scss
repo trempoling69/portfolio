@@ -1,0 +1,49 @@
+.titlePJ {
+  font-size: min(12vw, 10rem);
+  color: $clair;
+  margin-left: 1vw;
+}
+
+.projetContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  .projetlogo {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+    filter: blur(1px);
+    filter: grayscale(0.3);
+    img{
+        min-width: 90%;
+    }
+  }
+  .projetdescription {
+    z-index: 2;
+    background-color: rgba($color: $sombre, $alpha: 0.5);
+    margin: 0 1vh;
+    h2 {
+      font-size: min(8vw, 3.5rem);
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 3vw;
+    }
+    h4 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 2rem;
+      margin-bottom: 3vw;
+    }
+    .linkProjet {
+        text-decoration: none;
+        margin-top: 3vh;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: $plusclair;
+    }
+  }
+}

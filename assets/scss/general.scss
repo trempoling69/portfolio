@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    color: $plusclair;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+body{
+    background-color: $sombre;
+    //overflow: hidden;
+}
+.container{
+    min-height: 100vh;
+    margin: 0 5vw;
+    @include media-max("tablet-up"){
+        margin: 0;
+    }
+}
+
+.navListe{
+    @include media-max("tablet-up"){
+        display: none;
+    }
+}
